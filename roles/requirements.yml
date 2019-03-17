@@ -1,0 +1,2 @@
+- src: lvlie.ansible_role_rpi_upgrade
+  name: rpi_upgrade

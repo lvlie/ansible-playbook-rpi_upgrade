@@ -1,0 +1,7 @@
+- name: Upgrade RPi
+  hosts: pi
+  gather_facts: min
+  become: true
+
+  roles:
+    - rpi_upgrade

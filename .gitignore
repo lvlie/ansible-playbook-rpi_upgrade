@@ -1,0 +1,5 @@
+*.sw*
+*.orig
+*.retry
+/roles/*
+!/roles/requirements.yml
