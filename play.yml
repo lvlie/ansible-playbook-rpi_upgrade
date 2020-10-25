@@ -1,3 +1,13 @@
+- name: Upgrade
+  hosts: all,!pi
+  gather_facts: true
+  become: true
+
+  roles:
+    - update_package_cache
+    - update
+    - docker_compose
+
 - name: Upgrade RPi
   hosts: pi
   gather_facts: min

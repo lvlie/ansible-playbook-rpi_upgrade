@@ -1,2 +1,13 @@
+---
 - src: lvlie.ansible_role_rpi_upgrade
   name: rpi_upgrade
+
+- src: robertdebock.update_package_cache
+  name: update_package_cache
+
+- src: robertdebock.update
+  name: update
+
+- name: docker_compose
+  src: https://github.com/lvlie/ansible-role-docker_compose
+  version: master
