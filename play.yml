@@ -1,12 +1,11 @@
-- name: Upgrade
-  hosts: all,!pi
+- name: Upgrade ubuntu
+  hosts: ubuntu
   gather_facts: true
   become: true
 
   roles:
     - update_package_cache
     - update
-    - docker_compose
 
 - name: Upgrade RPi
   hosts: pi
@@ -15,3 +14,11 @@
 
   roles:
     - rpi_upgrade
+
+- name: Upgrade containers
+  hosts: compose
+  gather_facts: true
+  become: true
+
+  roles:
+    - docker_compose
