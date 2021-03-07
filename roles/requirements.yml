@@ -2,6 +2,9 @@
 - src: lvlie.ansible_role_rpi_upgrade
   name: rpi_upgrade
 
+- src: robertdebock.bootstrap
+  name: bootstrap
+
 - src: robertdebock.update_package_cache
   name: update_package_cache
 
