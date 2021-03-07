@@ -4,6 +4,7 @@
   become: true
 
   roles:
+    - bootstrap
     - update_package_cache
     - update
 
